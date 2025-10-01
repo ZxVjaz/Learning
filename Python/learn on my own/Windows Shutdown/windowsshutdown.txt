@@ -1,0 +1,4 @@
+Code ini membutuhkan import library tkinter
+========================================================================================
+dan dapat di setup menggunakan pyinstaller agar menjadi file .execution
+pyinstaller --onefile --windowed --name "ShutdownController" --icon=power-button.ico Windows-Shutdown.py

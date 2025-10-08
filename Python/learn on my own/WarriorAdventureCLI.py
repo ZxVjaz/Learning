@@ -1,9 +1,9 @@
 # WarriorAdventureCLI.py
 import random
-import os  # ⭐ IMPORT INI
+import os  
 
 def clear_screen():
-    os.system('cls')  # ⭐ FUNGSI CLEAR SCREEN
+    os.system('cls')  
 
 # Player stats
 player = {
@@ -37,7 +37,7 @@ def show_stats():
 
 def shop():
     while True:
-        clear_screen()  # ⭐ CLEAR SCREEN DI AWAL SHOP
+        clear_screen()  
         print('=' * 40)
         print(' ' * 15 + 'SHOP')
         print('=' * 40)
@@ -75,7 +75,7 @@ def shop():
                     player['health'] += item['value']
                     print(f"\nYou used {item['name']} and permanently increased your max health by {item['value']}!")
                 
-                input("\nPress Enter to continue...")  # ⭐ TUNGGU USER TEKAN ENTER
+                input("\nPress Enter to continue...")  
                 show_stats()
             else:
                 print("\nNot enough coins!")
@@ -88,40 +88,40 @@ def rock_paper_scissors_battle(enemy):
     choices = ['rock', 'paper', 'scissors']
     
     while enemy['health'] > 0 and player['health'] > 0:
-        clear_screen()  # ⭐ CLEAR SCREEN SETIAP ROUND BATTLE
+        clear_screen()  
         print(f"\nA wild {enemy['name']} appears!")
         print(f"Enemy Health: {enemy['health']}, Enemy Damage: {enemy['damage']}")
         print(f"Your Health: {player['health']}/{player['max_health']}")
         
-        # Player choice
+        
         player_choice = input("\nChoose (rock/paper/scissors): ").lower()
         while player_choice not in choices:
             print("Invalid choice! Choose rock, paper, or scissors.")
             player_choice = input("Choose (rock/paper/scissors): ").lower()
         
-        # Enemy choice
+        
         enemy_choice = random.choice(choices)
         print(f"Enemy chose: {enemy_choice}")
         
-        # Determine winner
+        
         if player_choice == enemy_choice:
             print("It's a tie! No damage dealt.")
         elif (player_choice == 'rock' and enemy_choice == 'scissors') or \
              (player_choice == 'paper' and enemy_choice == 'rock') or \
              (player_choice == 'scissors' and enemy_choice == 'paper'):
-            # Player wins round
+            
             damage_dealt = player['damage']
             enemy['health'] -= damage_dealt
             print(f"You win this round! You deal {damage_dealt} damage to {enemy['name']}!")
         else:
-            # Enemy wins round
+            
             damage_taken = enemy['damage']
             player['health'] -= damage_taken
             print(f"You lose this round! {enemy['name']} deals {damage_taken} damage to you!")
         
-        input("\nPress Enter to continue...")  # ⭐ TUNGGU SEBELUM NEXT ROUND
+        input("\nPress Enter to continue...")  
         
-        # Check if battle is over
+        
         if enemy['health'] <= 0:
             clear_screen()
             print(f"\nYou defeated the {enemy['name']}!")
@@ -138,19 +138,19 @@ def rock_paper_scissors_battle(enemy):
     return False
 
 def start_game():
-    clear_screen()  # ⭐ CLEAR SCREEN DI AWAL GAME
+    clear_screen()  
     print('=' * 40)
     print(' ' * 10 + 'STARTING GAME')
     print('=' * 40)
     
-    # Reset player health at start of new game (but keep upgrades)
+    
     player['health'] = player['max_health']
     
-    # Enemy progression based on difficulty
+    
     difficulty_levels = ['easy', 'medium', 'hard', 'boss']
     
     for level in difficulty_levels:
-        # Select random enemy of current difficulty
+        
         available_enemies = [e for e in enemies if e['difficulty'] == level]
         enemy = random.choice(available_enemies).copy()
         
@@ -165,7 +165,7 @@ def start_game():
                 input("\nPress Enter to return to main menu...")
                 break
             
-            # Heal player between battles (50% of max health)
+            
             heal_amount = player['max_health'] // 2
             player['health'] = min(player['max_health'], player['health'] + heal_amount)
             clear_screen()
@@ -178,14 +178,14 @@ def start_game():
                 break
         else:
             print("Game Over! Returning to main menu...")
-            # Reset player health after defeat
+            
             player['health'] = player['max_health']
             input("\nPress Enter to continue...")
             break
 
 def main():
     while True:
-        clear_screen()  # ⭐ CLEAR SCREEN DI AWAL MENU
+        clear_screen()  
         print('=' * 40)
         print(' ' * 10 + 'Warrior Adventure')
         print('=' * 40)
@@ -197,7 +197,7 @@ def main():
         print('2. Shop')
         print('3. Quit')
     
-        # Get user input and handle choices
+        
         choice = input('\nEnter your choice (1-3): ')
         if choice == '1':
             start_game()

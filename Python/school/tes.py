@@ -7,21 +7,20 @@ Nama = ""
 while Nama != "reno":
     Nama = input("Masukkan Nama Anda : ").lower()
     if Nama == "reno":
-        te = " "
+        Jenis_Kelamin = " "
     else:
         Jenis_Kelamin = input("Masukkan Jenis Kelamin Anda (L/P) : ").lower()
         
     if Jenis_Kelamin == "l":
             L += 1
+            print("Jumlah Siswa Laki-Laki :", L)
+            print("Jumlah Siswa Perempuan :", P)
     elif Jenis_Kelamin == "p":
             P += 1
+            print("Jumlah Siswa Laki-Laki :", L)
+            print("Jumlah Siswa Perempuan :", P)
     else:
-            te = " "
-            
-print("Nama Anda Adalah :", Nama)
+          i = ""
 print("Jumlah Siswa Laki-Laki :", L)
 print("Jumlah Siswa Perempuan :", P)
-print("-" * 30)
-
-print("Jumlah Semua Siswa :", L + P)
 #selesai

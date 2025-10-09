@@ -1,34 +1,29 @@
-print("===============================")
-print("=== Daftar MBG Pelajaran Dasjur ===")
-print("===============================")
-
-Hari_Libur = input("Hari Libur (y/t): ").lower()
-Minggu = input("Minggu (1-4): ")
-Hari = input("Hari (Senin/Kamis): ").lower()
-
-if Hari_Libur == 'y':
-    print("MBG tidak ada karena hari libur.")
+print('Menu MBG pel. Dasjur X RPL 4')
+weekend = input('Hari Libur (y/t)? \n').lower()
+week = input('minggu ke (1-4)? \n')
+day = input('hari (senin/kamis)? \n').lower()
+if weekend == 'y':
+    menu_mbg = 'tidak ada mbg, hari libur'
 else:
-    if Minggu == '1':
-        if Hari == 'senin':
-            MBG = "Nasi uduk"    
+    if week == '1':
+        if day == 'senin':
+            menu_mbg = 'nasi ayam goreng'
         else:
-            MBG = "Sayur Asem"
-    elif Minggu == '2':
-        if Hari == 'senin':
-            MBG = "Nasi Goreng"
+            menu_mbg = 'nasi telur orak arik'
+    elif week == '2':
+        if day == 'senin':
+            menu_mbg = 'nasi telur pindang'
         else:
-            MBG = "Soto Ayam"
-    elif Minggu == '3':
-        if Hari == 'senin':
-            MBG = "Mie Ayam"
+            menu_mbg = 'burger chicken katsu'
+    elif week == '3':
+        if day == 'senin':
+            menu_mbg = 'nasi kuning tempe orek'
         else:
-            MBG = "Bakso"
+            menu_mbg = 'nasi ayam teriyaki'
     else:
-        if Hari == 'senin':
-            MBG = "Pecel Lele"
+        if day == 'senin':
+            menu_mbg = 'roti burger chicken katsu'
         else:
-            MBG = "Ayam Geprek"
-
-print("Menu MBG")
-print(MBG)
+            menu_mbg = 'nasi liwet ayam lengkuas'
+print('menu mbg')
+print(menu_mbg)

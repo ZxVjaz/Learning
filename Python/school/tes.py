@@ -13,8 +13,10 @@ while Nama != "reno":
         
     if Jenis_Kelamin == "l":
             L += 1
-    else:
+    elif Jenis_Kelamin == "p":
             P += 1
+    else:
+            te = " "
             
 print("Nama Anda Adalah :", Nama)
 print("Jumlah Siswa Laki-Laki :", L)

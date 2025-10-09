@@ -14,10 +14,6 @@ while True:
         print("Nama Anda Adalah : ", Nama)
         print("Jumlah Siswa Laki-Laki : ", L, "\nJumlah Siswa Perempuan : ", P)
     if Nama == "reno":
-        print("Nama Anda Adalah : ", Nama
-              , "\nJumlah Siswa Laki-Laki : ", L, "\nJumlah Siswa Perempuan : ", P)
         break
-Jumlah_Semua_Siswa = L + P
-print("Jumlah Semua Siswa Adalah : ", Jumlah_Semua_Siswa)
 #selesai
 

@@ -21,6 +21,4 @@ while Nama != "reno":
             print("Jumlah Siswa Perempuan :", P)
     else:
           i = ""
-print("Jumlah Siswa Laki-Laki :", L)
-print("Jumlah Siswa Perempuan :", P)
 #selesai

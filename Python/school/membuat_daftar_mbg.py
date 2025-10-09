@@ -1,10 +1,10 @@
 print('Menu MBG pel. Dasjur X RPL 4')
 weekend = input('Hari Libur (y/t)? \n').lower()
-week = input('minggu ke (1-4)? \n')
-day = input('hari (senin/kamis)? \n').lower()
 if weekend == 'y':
     menu_mbg = 'tidak ada mbg, hari libur'
 else:
+    week = input('minggu ke (1-4)? \n')
+    day = input('hari (senin/kamis)? \n').lower()
     if week == '1':
         if day == 'senin':
             menu_mbg = 'nasi ayam goreng'

@@ -77,7 +77,7 @@ class GeminiChatTerminal:
 
 def main():
     # API key Anda
-    API_KEY = "AIzaSyCT5-mKYXAjbKXoF9Z0gHQnhyw2LLmWcRo"
+    API_KEY = "apikey"
     
     try:
         chatbot = GeminiChatTerminal(API_KEY)

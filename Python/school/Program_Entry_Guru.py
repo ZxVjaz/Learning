@@ -1,5 +1,8 @@
+#persiapan
+ulang = 'y'
+
 #perulangan
-while True:
+while ulang == 'y':
     #Pembukaan
     print('=' * 30)
     Nama_Guru = input('Nama Guru:').lower().replace(' ', '')
@@ -28,12 +31,10 @@ while True:
         Hari = 'Tidak diketahui'
 
     #Output
-    print(f"{'Nama':<5} {'Mapel':<8} {'Jurusan':<8} {'Hari':<8}")
-    print(f"{Nama_Guru:<5} {Nama_Mapel:<8} {Jurusan:<8} {Hari:<8}")
+    print(f"{'Nama':<15} {'Mapel':<18} {'Jurusan':<18} {'Hari':<18}")
+    print(f"{Nama_Guru:<15} {Nama_Mapel:<18} {Jurusan:<18} {Hari:<18}")
     print('=' * 30)
 
     #Ulang
     ulang = input('Ulang (y/t)?').lower()
-    if ulang == 't':
-        break
 #selesai

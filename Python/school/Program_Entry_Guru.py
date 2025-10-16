@@ -4,10 +4,7 @@ no = 1
 while True:
     #Pembukaan
     print('=' * 30)
-    while True:
-        Nama_Guru = input('Nama Guru:').lower().replace(' ', '')
-        if Nama_Guru == 'ramdani' or Nama_Guru == 'atiks' or Nama_Guru == 'indri' or Nama_Guru == 'faizal' or Nama_Guru == 'tholib':
-            break
+    Nama_Guru = input('Nama Guru:').lower().replace(' ', '')
     Nama_Mapel = input('Nama Mapel:')
     Jurusan = input('Jurusan:')
     print('=' * 30)
@@ -26,9 +23,11 @@ while True:
     elif Nama_Guru == 'faizal':
         Nama_Guru = 'Faizal'
         Hari = 'Kamis'
-    else:
+    elif Nama_Guru == 'tholib':
         Nama_Guru = 'Tholib'
         Hari = 'Jum\'at'
+    else:
+        Hari = 'Tidak diketahui'
 
     #Output
     print(no, Nama_Guru, Nama_Mapel, Jurusan, Hari)

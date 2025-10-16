@@ -1,5 +1,3 @@
-#Persiapan
-no = 1
 #perulangan
 while True:
     #Pembukaan
@@ -32,9 +30,6 @@ while True:
     #Output
     print(no, Nama_Guru, Nama_Mapel, Jurusan, Hari)
     print('=' * 30)
-    
-    #No +
-    no += 1
 
     #Ulang
     ulang = input('Ulang (y/t)?').lower()

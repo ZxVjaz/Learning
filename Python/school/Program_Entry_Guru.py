@@ -28,7 +28,7 @@ while True:
         Hari = 'Tidak diketahui'
 
     #Output
-    print(no, Nama_Guru, Nama_Mapel, Jurusan, Hari)
+    print(Nama_Guru, Nama_Mapel, Jurusan, Hari)
     print('=' * 30)
 
     #Ulang

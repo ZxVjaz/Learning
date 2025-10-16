@@ -21,8 +21,8 @@ while True:
     elif Nama_Guru == 'faizal':
         Nama_Guru = 'Faizal'
         Hari = 'Kamis'
-    elif Nama_Guru == 'tholib':
-        Nama_Guru = 'Tholib'
+    elif Nama_Guru == 'thalib':
+        Nama_Guru = 'Thalib'
         Hari = 'Jum\'at'
     else:
         Hari = 'Tidak diketahui'

@@ -31,8 +31,8 @@ while ulang == 'y':
         Hari = 'Tidak diketahui'
 
     #Output
-    print(f"{'Nama':<15} {'Mapel':<18} {'Jurusan':<18} {'Hari':<18}")
-    print(f"{Nama_Guru:<15} {Nama_Mapel:<18} {Jurusan:<18} {Hari:<18}")
+    print(f"{'Nama':<5} {'Mapel':<8} {'Jurusan':<8} {'Hari':<8}")
+    print(f"{Nama_Guru:<5} {Nama_Mapel:<8} {Jurusan:<8} {Hari:<8}")
     print('=' * 30)
 
     #Ulang

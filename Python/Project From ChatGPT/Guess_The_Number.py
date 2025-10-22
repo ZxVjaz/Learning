@@ -25,6 +25,13 @@ except:
     Player_Guess = int(input('Wrong Input\n' \
     'Pick Number From 1 To 10: '))
 
+if Player_Guess > Guess_Number:
+    print('=' * 30)
+    print('Too High')
+    
+elif Player_Guess < Guess_Number:
+    print('=' * 30)
+    print('Too Low')
 while Player_Guess != Guess_Number:
     try:
         print('=' * 30)

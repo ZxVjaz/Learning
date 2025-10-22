@@ -17,8 +17,13 @@ for i in range(20):
 
 print('')
 print('=' * 30)
-Player_Guess = int(input('Computer Already Pick The Number\n' \
-'Guess The Number From 1 To 10: '))
+try:
+    Player_Guess = int(input('Computer Already Pick The Number\n' \
+    'Guess The Number From 1 To 10: '))
+except:
+    print('=' * 30)
+    Player_Guess = int(input('Wrong Input\n' \
+    'Pick Number From 1 To 10: '))
 
 while Player_Guess != Guess_Number:
     try:

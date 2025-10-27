@@ -7,13 +7,19 @@ print("=" * 50)
 while True:
     try:
         Jenis_Kendaraan = int(input('PILIH JENIS KENDARAAN \n' \
-        '1. Motor \n' \
-        '2. Mobil \n' \
-        '3. Truk \n' ))
-        break
+        '1. MOTOR \n' \
+        '2. MOBIL \n' \
+        '3. TRUK \n'  \
+        'MASUKKAN PILIHAN ANDA (1/2/3): '))
+        if Jenis_Kendaraan == 1 or Jenis_Kendaraan == 2 or Jenis_Kendaraan == 3:
+            break
+        else:
+            print('=' * 50)
+            print('MASUKKAN ANGKA YANG ADA DI LIST')
+            print('=' * 50)
     except ValueError:
         print('=' * 50)
-        print('masukkan angkanya saja')
+        print('MASUKKAN ANGKA SAJA')
         print('=' * 50)
 
 #Seleksi
@@ -29,7 +35,7 @@ else:
     
 #Output
 print('=' * 50)
-print('Harga Parkir')
-print(f'Jam Pertama: {Harga_Awal}')
-print(f'Jam Berikutnya: {Harga_Berikutnya}')
+print('HARGA PARKIR')
+print(f'JAM PERTAMA: {Harga_Awal}')
+print(f'JAM BERIKUTNYA: {Harga_Berikutnya}')
 print('=' * 50)
